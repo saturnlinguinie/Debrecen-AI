@@ -321,6 +321,10 @@ footer {
     border: 2px solid #DE638A;
     display: inline-block;
 }
+/* This forces the hidden attribute to work properly */
+[hidden] {
+    display: none !important;
+}
 
 /* PRIMARY BUTTON */
 
