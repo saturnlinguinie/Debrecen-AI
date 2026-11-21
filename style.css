@@ -1,0 +1,499 @@
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #F3D9E5;
+    /* Soft Mimi Pink background */
+    color: #4A3267;
+    /* English Violet text */
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #4A3267;
+    padding: 20px 8%;
+    border-bottom: 4px solid #DE638A;
+    /* Fun pink underline */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F7B9C4;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #F3D9E5;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #F7B9C4;
+}
+
+/* WELCOME SECTION */
+
+.hero {
+    background-color: #4A3267;
+    color: white;
+    padding: 90px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fun background decorative circle */
+.hero::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    width: 300px;
+    height: 300px;
+    background-color: #C6BADE;
+    border-radius: 50%;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.hero-content {
+    max-width: 750px;
+    position: relative;
+    z-index: 1;
+}
+
+.tagline {
+    color: #F7B9C4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #F3D9E5;
+}
+
+.hero-description {
+    color: #C6BADE;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* SEARCH BOX */
+
+.search-box {
+    display: flex;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+    max-width: 550px;
+    border: 3px solid #DE638A;
+    box-shadow: 4px 4px 0px #DE638A;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: #4A3267;
+    min-width: 0;
+    background: transparent;
+}
+
+.search-box button {
+    background-color: #DE638A;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.search-box button:hover {
+    background-color: #4A3267;
+}
+
+/* EXPLORE SECTION */
+
+.explore {
+    padding: 70px 8%;
+}
+
+.explore h2,
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #4A3267;
+}
+
+.section-description {
+    color: #DE638A;
+    margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* QUIRKY CARDS */
+
+.service-card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    border: 2px solid #4A3267;
+    box-shadow: 6px 6px 0px #C6BADE;
+    /* Hard shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px #DE638A;
+    /* Bigger pink shadow on hover */
+}
+
+.service-card span {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #4A3267;
+    font-size: 22px;
+}
+
+.service-card p {
+    color: #4A3267;
+    font-size: 15px;
+    flex-grow: 1;
+    /* Pushes the button to the bottom */
+}
+
+/* ABOUT SECTION */
+
+.about {
+    padding: 65px 8%;
+    background-color: #C6BADE;
+    /* Thistle background */
+    border-top: 3px solid #4A3267;
+}
+
+.about p {
+    max-width: 650px;
+    color: #4A3267;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #4A3267;
+    color: #F3D9E5;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Fredoka', sans-serif;
+    border-top: 4px solid #DE638A;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 65px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .explore {
+        padding: 50px 5%;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box button {
+        padding: 12px 16px;
+    }
+}
+
+/* INTERACTIVE SEARCH MESSAGES */
+
+.search-message,
+.no-results,
+.service-message {
+    margin-top: 15px;
+    color: #DE638A;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.no-results {
+    color: #DE638A;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #DE638A;
+    display: inline-block;
+}
+
+/* PRIMARY BUTTON */
+
+.primary-button {
+    display: inline-block;
+    background-color: #DE638A;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    border: 2px solid #4A3267;
+    box-shadow: 3px 3px 0px #4A3267;
+    transition: all 0.15s ease;
+    text-align: center;
+}
+
+.primary-button:hover {
+    background-color: #4A3267;
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0px #DE638A;
+}
+
+/* JOB LISTINGS & CARDS */
+
+.job-listings {
+    padding: 70px 8%;
+    background-color: #f5f7fb;
+    /* Keep this light for job pages */
+}
+
+.job-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 20px;
+}
+
+.job-filters input,
+.job-filters select {
+    flex: 1;
+    min-width: 180px;
+    padding: 14px;
+    border: 2px solid #4A3267;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    color: #4A3267;
+}
+
+.job-filters button {
+    padding: 14px 20px;
+    border: 2px solid #4A3267;
+    border-radius: 10px;
+    background-color: #DE638A;
+    color: white;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    box-shadow: 3px 3px 0px #4A3267;
+    transition: all 0.15s ease;
+}
+
+.job-filters button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0px #4A3267;
+}
+
+.job-result-message {
+    color: #4A3267;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 2px solid #4A3267;
+    box-shadow: 5px 5px 0px #C6BADE;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #DE638A;
+}
+
+.job-card span {
+    display: inline-block;
+    background-color: #F7B9C4;
+    color: #4A3267;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border: 1px solid #4A3267;
+}
+
+.job-card h3 {
+    margin: 12px 0;
+    color: #4A3267;
+    font-size: 22px;
+}
+
+.job-card p {
+    color: #4A3267;
+    font-size: 15px;
+}
+
+.job-card small {
+    color: #DE638A;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+.demo-notice {
+    margin-top: 25px;
+    color: #4A3267;
+    font-size: 14px;
+    font-weight: 600;
+    background: #F7B9C4;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #DE638A;
+}
+
+@media (max-width: 900px) {
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .job-listings {
+        padding: 45px 5%;
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* REAL JOB SOURCES */
+
+.real-job-sources {
+    margin-top: 70px;
+    padding-top: 40px;
+    border-top: 3px dashed #C6BADE;
+}
+
+.real-job-sources h2 {
+    margin-bottom: 12px;
+}
+
+/* TARGETED BUTTON SPACING */
+
+.service-card .primary-button {
+    margin-top: auto;
+    /* Pushes button to bottom of card */
+    padding: 12px 20px;
+    font-size: 15px;
+    width: 100%;
+}

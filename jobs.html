@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs & Employment | DEBRECEN AI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                DEBRECEN <span>AI</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#job-categories">Explore Jobs</a></li>
+                <li><a href="#job-tips">Job Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- JOBS WELCOME SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">CAREER OPPORTUNITIES IN DEBRECEN</p>
+
+            <h1>
+                Find Your Next
+                <br>
+                Opportunity.
+            </h1>
+
+            <p class="hero-description">
+                Discover student jobs, part-time work,
+                internships and career opportunities
+                in Debrecen.
+            </p>
+
+            <a href="#job-categories" class="primary-button">
+                Explore Job Categories
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- JOB CATEGORIES -->
+    <section class="explore" id="job-categories">
+
+        <h2>Explore Job Opportunities</h2>
+
+        <p class="section-description">
+            Find the type of work that suits your needs.
+        </p>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <span>🎓</span>
+                <h3>Student Jobs</h3>
+                <p>Flexible work opportunities for university students.</p>
+            </div>
+
+            <div class="service-card">
+                <span>⏰</span>
+                <h3>Part-Time Jobs</h3>
+                <p>Find work with flexible working hours.</p>
+            </div>
+
+            <div class="service-card">
+                <span>💼</span>
+                <h3>Full-Time Jobs</h3>
+                <p>Explore long-term employment opportunities.</p>
+            </div>
+
+            <div class="service-card">
+                <span>🌱</span>
+                <h3>Internships</h3>
+                <p>Gain experience and develop professional skills.</p>
+            </div>
+
+            <div class="service-card">
+                <span>🌍</span>
+                <h3>English-Speaking Jobs</h3>
+                <p>Explore opportunities where English may be useful.</p>
+            </div>
+
+            <div class="service-card">
+                <span>🏠</span>
+                <h3>Remote Jobs</h3>
+                <p>Discover opportunities to work remotely.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JOB LISTINGS -->
+    <section class="job-listings" id="job-listings">
+
+        <h2>Find Your Next Job</h2>
+
+        <p class="section-description">
+            Search opportunities by job title or category.
+        </p>
+
+        <div class="job-filters">
+
+            <input type="text" id="jobSearch" placeholder="Try student job, cashier, internship...">
+
+            <select id="jobCategory">
+                <option value="all">All job categories</option>
+                <option value="student">Student Jobs</option>
+                <option value="part-time">Part-Time Jobs</option>
+                <option value="full-time">Full-Time Jobs</option>
+                <option value="internship">Internships</option>
+                <option value="remote">Remote Jobs</option>
+            </select>
+
+            <button type="button" id="jobSearchButton">
+                Search Jobs
+            </button>
+
+            <button type="button" id="clearJobFilters">
+                Clear Filters
+            </button>
+
+        </div>
+
+        <p id="jobResultMessage" class="job-result-message">
+            Showing example job listings.
+        </p>
+
+        <div class="job-grid" id="jobGrid">
+
+            <div class="job-card" data-category="student" data-keywords="student job university student work assistant">
+
+                <span>🎓 Student Opportunity</span>
+                <h3>Student Assistant</h3>
+                <p>Example student position for someone looking for flexible work.</p>
+                <small>Category: Student Jobs</small>
+
+            </div>
+
+            <div class="job-card" data-category="part-time"
+                data-keywords="part-time cashier shop assistant retail customer service">
+
+                <span>⏰ Part-Time Opportunity</span>
+                <h3>Shop Assistant</h3>
+                <p>Example retail position with part-time working hours.</p>
+                <small>Category: Part-Time Jobs</small>
+
+            </div>
+
+            <div class="job-card" data-category="internship"
+                data-keywords="internship computer science programming software developer technology">
+
+                <span>💻 Internship Opportunity</span>
+                <h3>IT Intern</h3>
+                <p>Example internship for someone interested in technology.</p>
+                <small>Category: Internships</small>
+
+            </div>
+
+            <div class="job-card" data-category="full-time"
+                data-keywords="full-time office administrator administration">
+
+                <span>💼 Full-Time Opportunity</span>
+                <h3>Office Assistant</h3>
+                <p>Example administrative position.</p>
+                <small>Category: Full-Time Jobs</small>
+
+            </div>
+
+            <div class="job-card" data-category="remote" data-keywords="remote online work content writing writer">
+
+                <span>🏠 Remote Opportunity</span>
+                <h3>Content Writer</h3>
+                <p>Example remote writing opportunity.</p>
+                <small>Category: Remote Jobs</small>
+
+            </div>
+
+        </div>
+
+        <!-- REAL JOB SEARCH WEBSITES -->
+
+        <section class="real-job-sources">
+
+            <h2>Explore Real Job Opportunities</h2>
+
+            <p class="section-description">
+                Visit these websites to discover actual vacancies in Debrecen.
+            </p>
+
+            <div class="job-grid">
+
+                <div class="job-card">
+                    <span>🇭🇺 Hungarian Job Portal</span>
+                    <h3>Profession.hu</h3>
+                    <p>Search for student, part-time and full-time jobs in Debrecen.</p>
+                    <a href="https://www.profession.hu/allasok/debrecen/1,0,32,student%20%E2%80%93,0,4000"
+                        target="_blank" rel="noopener noreferrer" class="primary-button">Explore Jobs</a>
+                </div>
+
+                <div class="job-card">
+                    <span>🎓 Student Jobs</span>
+                    <h3>MŰISZ</h3>
+                    <p>Explore student work and internship opportunities.</p>
+                    <a href="https://muisz.hu/en/student-work" target="_blank" rel="noopener noreferrer"
+                        class="primary-button">Explore Jobs</a>
+                </div>
+
+                <div class="job-card">
+                    <span>🏫 Debrecen Student Work</span>
+                    <h3>Campus Work</h3>
+                    <p>Find flexible work opportunities for students.</p>
+                    <a href="https://www.campuswork.hu/" target="_blank" rel="noopener noreferrer"
+                        class="primary-button">Explore Jobs</a>
+                </div>
+
+                <div class="job-card">
+                    <span>🌍 European Opportunities</span>
+                    <h3>EURES</h3>
+                    <p>Learn about job opportunities and employment services in Hungary and Europe.</p>
+                    <a href="https://eures.munka.hu/Lapok/eures_english/eures_english_jobseekers.aspx" target="_blank"
+                        rel="noopener noreferrer" class="primary-button">Explore Jobs</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <p id="noJobResults" class="no-results" hidden>
+            No matching jobs found. Try changing your search.
+        </p>
+
+        <p class="demo-notice">
+            These are demonstration listings, not verified vacancies.
+        </p>
+
+    </section>
+
+
+    <!-- JOB SEARCH TIPS -->
+    <section class="about" id="job-tips">
+
+        <h2>Looking for Your First Job?</h2>
+
+        <p>
+            Finding a job in a new country can feel challenging.
+            Start by preparing your CV, exploring job websites
+            and checking the work conditions that apply to you.
+        </p>
+
+        <p>
+            International students should always check their
+            current residence permit and employment conditions
+            before accepting a job.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 DEBRECEN AI. Your City, Your Guide.</p>
+    </footer>
+    <elevenlabs-convai agent-id="agent_2601m7ywbtgkfzxb3bmvtz5zyk78"></elevenlabs-convai>
+    <script src="jobs.js"></script>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+
+</html>

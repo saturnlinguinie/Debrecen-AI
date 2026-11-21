@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DEBRECEN AI helps international students find housing, jobs, transport, healthcare and services in Debrecen.">
+
+    <title>DEBRECEN AI | Your City Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                DEBRECEN <span>AI</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- WELCOME SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">YOUR CITY, MADE EASIER</p>
+
+            <h1>
+                Discover Debrecen.
+                <br>
+                Find your way.
+            </h1>
+
+            <p class="hero-description">
+                Your intelligent guide to living,
+                studying and exploring Debrecen.
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="What are you looking for?">
+
+                <button type="button" id="searchButton">Search</button>
+            </div>
+            <p id="searchMessage" class="search-message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPLORE SECTION -->
+    <section class="explore" id="explore">
+
+        <h2>Explore Debrecen</h2>
+
+        <p class="section-description">
+            Everything you need, all in one place.
+        </p>
+
+        <div class="service-grid">
+
+            <!-- HOUSING -->
+            <div class="service-card"
+                data-keywords="housing apartment rent accommodation flat alberlet ingatlan dormitory dorm">
+                <span>🏠</span>
+                <h3>Housing</h3>
+                <p>Dorms, apartments, and rental sites for Debrecen.</p>
+                <a href="housing.html" class="primary-button">View Housing Guide</a>
+            </div>
+
+            <!-- JOBS -->
+            <div class="service-card"
+                data-keywords="jobs employment work career student job student jobs student work part-time part time parttime university jobs summer jobs internships">
+                <span>💼</span>
+                <h3>Jobs</h3>
+                <p>Student work, part-time jobs, internships, and English-friendly roles.</p>
+                <a href="jobs.html" class="primary-button">View Jobs Guide</a>
+            </div>
+
+            <!-- TRANSPORT -->
+            <div class="service-card" data-keywords="transport bus tram ticket travel dkv pass student airport train">
+                <span>🚌</span>
+                <h3>Transport</h3>
+                <p>DKV buses, trams, student passes, and airport transfers.</p>
+                <a href="transport.html" class="primary-button">View Transport Guide</a>
+            </div>
+
+            <!-- RESTAURANTS -->
+            <div class="service-card"
+                data-keywords="restaurants food cafes pizza burger kebab halal vegetarian lunch dinner eat coffee">
+                <span>🍕</span>
+                <h3>Restaurants</h3>
+                <p>Local Hungarian food, international options, and student-friendly cafés.</p>
+                <a href="restaurants.html" class="primary-button">View Food Guide</a>
+            </div>
+
+            <!-- UNIVERSITY -->
+            <div class="service-card"
+                data-keywords="university student education study registration freshman unideb stipendium erasmus">
+                <span>🎓</span>
+                <h3>University</h3>
+                <p>Registration, freshman info, and international student resources.</p>
+                <a href="university.html" class="primary-button">View University Guide</a>
+            </div>
+
+            <!-- HEALTHCARE -->
+            <div class="service-card"
+                data-keywords="healthcare hospital doctor pharmacy medicine emergency taj insurance ambulance 112">
+                <span>🏥</span>
+                <h3>Healthcare</h3>
+                <p>TAJ card, doctors, pharmacies, and emergency contacts.</p>
+                <a href="healthcare.html" class="primary-button">View Healthcare Guide</a>
+            </div>
+
+            <!-- GOVERNMENT -->
+            <div class="service-card"
+                data-keywords="government documents immigration office residence permit address card lakcim tax official bevandorlas oif">
+                <span>🏛️</span>
+                <h3>Government</h3>
+                <p>Residence permits, address cards, and immigration office info.</p>
+                <a href="government.html" class="primary-button">View Government Guide</a>
+            </div>
+
+            <!-- FUN -->
+            <div class="service-card"
+                data-keywords="fun activities entertainment things to do leisure sport games zoo spa escape room bowling trampoline">
+                <span>🎉</span>
+                <h3>Fun & Activities</h3>
+                <p>For all the curious minds & people finding brief relief.</p>
+                <a href="fun.html" class="primary-button">View Fun Guide</a>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            Sorry, no matching services found. Try another search.
+        </p>
+
+        <p id="serviceMessage" class="service-message"></p>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2>About DEBRECEN AI</h2>
+
+        <p>
+            DEBRECEN AI is your intelligent city guide,
+            designed to make everyday life in Debrecen
+            easier for everyone.
+        </p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 DEBRECEN AI. Your City, Your Guide.</p>
+    </footer>
+    <elevenlabs-convai agent-id="agent_2601m7ywbtgkfzxb3bmvtz5zyk78"></elevenlabs-convai>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+
+</html>
